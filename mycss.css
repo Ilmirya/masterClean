@@ -1,0 +1,315 @@
+.first-div{
+	background: url(./img/ttt.png);
+	height: 500px;
+	padding-top: 33px;
+}
+.logo{
+	height: 50px;
+}
+.padding{
+	padding-top: 20px;
+}
+.card-mine {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    background-clip: border-box;
+}
+.row-contacts{
+	padding: 50px 100px 50px 100px;
+}
+.contacts{
+	padding: 20px;
+}
+#map{
+  	background: url(./img/map1000.png) #ffffff no-repeat;
+    width: 100%; 
+    height: 410px; 
+    padding: 0px; 
+    margin: 0;
+}
+/* &#34;Блок-обертка&#34;, где мы задаем фоновое изображение скриншотом как на карте */
+.ymap-container {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 20px; 
+  background-position: center center;
+  background-size: cover;
+}
+
+/* Индикатор загрузки, который показывается до загрузки карты */
+.loader {
+  position: absolute;
+  z-index: 15;
+  top: -100%;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: #000000;
+  transition: opacity .7s ease;
+  opacity: 0;
+  background-color: rgba(0,0,0,.55);
+}
+ 
+.loader:after,
+.loader:before {
+  box-sizing: border-box;
+}
+ 
+.loader.is-active {
+  top: 0;
+  opacity: 1;
+}
+ 
+.loader-default:after {
+  position: absolute;
+  top: calc(50% - 24px);
+  left: calc(50% - 24px);
+  width: 48px;
+  height: 48px;
+  content: '';
+  animation: rotation 1s linear infinite;
+  border: solid 8px #ffffff;
+  border-left-color: transparent;
+  border-radius: 50%;
+}
+ 
+@keyframes rotation {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+ 
+@keyframes blink {
+  from {
+    opacity: .5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.footer{
+	background: #111111;
+	color: #FFFFFF;
+	padding: 30px;	
+}
+.footer-link{
+	color: #FFFFFF;
+}
+.clock {
+    color: #1D6887;
+    font-size: 60px;
+    font-family: Orbitron;
+    letter-spacing: 7px;
+}
+.col-timer{
+	background: url(./img/lll.png);
+	height: 200px;
+}
+.row-timer{
+	display: flex;
+    flex-wrap: wrap;
+	margin: 45px;
+}
+.h4-timer{
+	margin:0 0 -18px 5px;
+}
+.card-body-mine {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.2rem;
+}
+.modal-header-mine {
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-right: 16px;
+}
+.modal-body-mine {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 0 35px 25px 35px;
+}
+.btn-mine{
+	color: #fff;
+    background-color: #1D6887;
+    border-color: #1D6887;
+}
+.img-rug, .img-carpet{
+	width: 100%;
+}
+.h2-contact{
+	margin-bottom: 30px;
+}
+@media (min-width: 992px) { 
+	.row-timer{
+		margin: 45px;
+	}
+}
+@media (max-width: 991.98px) { 
+	.first-div{
+		background: url(./img/main991.png);
+	}
+	#map{
+	  	background: url(./img/map991.png) #ffffff no-repeat;
+	}
+	.img-rug, .img-carpet{
+		width: 50%;
+	}
+	.col-timer{
+		height: 260px;
+	}
+	.row-timer{
+		margin: 25px;
+	}
+	.clock{
+	    font-size: 50px;
+	}
+	.h4-timer{
+		margin:0 0 -15px 5px;
+	}
+}
+@media (max-width: 800px){
+	#map{
+	  	background: url(./img/map800.png) #ffffff no-repeat;
+	}
+}
+@media (max-width: 650px) { 
+	.logo{
+		height: 40px;
+	}
+	.first-div{
+		background: url(./img/main650.png);
+	}
+	.row-contacts{
+		padding: 20px 40px 20px 40px;
+	}
+	.display-4{
+		font-size: 3rem;
+	}
+	.row-timer{
+		margin: 20px;
+	}
+	.col-timer{
+		height: 240px;
+	}
+	.clock{
+	    font-size: 40px;
+	}
+	.h4-timer{
+		margin:0 0 -10px 5px;
+	}
+	.card-body-mine {
+		padding-right: 1px;
+		padding-left: 1px;	    
+	}
+	#map{ 
+	  	background: url(./img/map650.png) #ffffff no-repeat;
+	    height: 360px; 
+	}
+	.h2-contact{
+		margin-bottom: 20px;
+	}
+}
+@media (max-width: 565px) { 
+	body{
+		font-size: 0.9rem;
+	}
+	h2 {
+	    font-size: 1.7em;
+	}
+	h3 {
+	    font-size: 1.5em;
+	}
+	h4 {
+	    font-size: 1.3em;
+	}
+	h5 {
+	    font-size: 1.1rem;
+	}
+	p {
+	    margin-bottom: 0.3rem;
+	}
+
+	#map{ 
+	  	background: url(./img/map565.png) #ffffff no-repeat;
+	}
+	.col-timer{
+		height: 200px;
+	}
+}
+@media (max-width: 470px) { 
+
+	.table td, .table th {
+	    padding: .5rem;
+	}
+	.card-title {
+    	margin-bottom: .4rem;
+	}
+	.display-4{
+		font-size: 2.7rem;
+	}
+	.lead {
+	    font-size: 1.1rem;
+	}
+	.first-div{
+		background: url(./img/main470.png);
+	}
+	.padding{
+		padding-top: 10px;
+	}
+	.card-body-mine {
+	    padding: 0.5rem; 
+	}
+	.row-contacts{
+		padding: 10px;
+	}
+	.row-timer{
+		margin: 10px;
+	}
+	.ymap-container{
+	    padding: 10px; 
+	}
+	#map{ 
+	  	background: url(./img/map470.png) #ffffff no-repeat;
+	    height: 330px; 
+	}
+	.footer{
+		padding: 10px 30px 10px 0px;
+	}
+	.h2-contact{
+		margin-bottom: 15px;
+	}
+	.col-timer{
+		height: 210px;
+	}
+}
+@media (max-width: 400px) { 
+	.first-div{
+		background: url(./img/main400.png);
+	}
+	.row-timer{
+		margin: 10px 0px 0px 0px;
+	}
+	.ymap-container{
+	    padding: 5px; 
+	}
+	#map{ 
+	  	background: url(./img/map400.png) #ffffff no-repeat;
+	    height: 310px; 
+	}
+	.footer{
+		padding: 10px 30px 10px 0px;
+		font-size: 0.85rem;	
+	}
+	.col-timer{
+		height: 220px;
+	}
+}

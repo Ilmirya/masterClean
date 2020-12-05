@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+Sitemap: https://masterclean102.ru/sitemap.xml
+Host: https://masterclean102.ru
